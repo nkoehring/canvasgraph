@@ -2,9 +2,34 @@ h1. CanvasGraph
 
 Paints simple graphs on a canvas tag.
 
-Configuration options:
+h3. Configuration options
+
 *background:* The canvas background colour (as CSS colour value)
 *foreground:* The line colour (as CSS colour value)
 
 Nothing more, yet.
+
+
+h3. Usage
+
+All you need is to give your canvas tag an identifier (for example _graph1_) and add this to (the
+bottom?) of your page:
+
+bc.
+  <script type=text/javascript>
+    new Graph('graph1', [1,2,3,4,5]);
+  </script>
+
+The second argument contains the data to be plotted. I don't test for invalid values so be sure it is
+only contains valid numericals.
+
+To set configuration options, simply add a hash as third argument:
+ 
+bc.
+  <script type=text/javascript>
+    new Graph('graph1', [1,2,3,4,5], {background: '#CCC', foreground: '#333'});
+  </script>
+
+
+That's it.
 
