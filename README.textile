@@ -1,0 +1,10 @@
+h1. CanvasGraph
+
+Paints simple graphs on a canvas tag.
+
+Configuration options:
+*background:* The canvas background colour (as CSS colour value)
+*foreground:* The line colour (as CSS colour value)
+
+Nothing more, yet.
+
